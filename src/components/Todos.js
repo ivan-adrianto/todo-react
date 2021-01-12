@@ -35,7 +35,7 @@ const Todos = ({ data, isLoading, isError, getData, updateTodo }) => {
             createdAt: e.target.id.split('&').slice(3, 4),
         }]
         updateTodo(data)
-        console.log(data)
+        console.log(e.target.id.split('&').slice(0, 1))
     }
 
     const toggle = () => setTrigger(!trigger)
