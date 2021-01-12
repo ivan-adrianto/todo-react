@@ -1,0 +1,10 @@
+const types = {
+    TODO_REQUEST : "TODO_REQUEST",
+    TODO_SUCCESS : "TODO_SUCCESS",
+    TODO_FAILED : "TODO_FAILED",
+    WRITE_TODO : "WRITE_TODO",
+    UPDATE_TODO : "UPDATE_TODO",
+    DELETE_TODO : "DELETE_TODO"
+}
+
+export default types
