@@ -6,7 +6,6 @@ import { useState } from 'react'
 import ModalAdd from './ModalAdd'
 
 function MainScreen() {
-    const [tab, setTab] = useState('todos')
     const [trigger, setTrigger] = useState(false)
 
     const toggle = () => setTrigger(!trigger)

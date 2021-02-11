@@ -1,4 +1,3 @@
-import { bindActionCreators } from 'redux'
 import types from '../actions/Types'
 
 const initialState = {

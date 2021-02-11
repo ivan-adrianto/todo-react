@@ -15,7 +15,7 @@ const Done = ({ data, isLoading, isError, getData, updateTodo }) => {
 
     useEffect(() => {
         getData()
-    }, [])
+    }, [getData])
 
     const handleClick = e => {
         setDescription(e.target.id.split('&').slice(1, 2))

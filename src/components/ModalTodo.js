@@ -1,15 +1,12 @@
 /* eslint react/no-multi-comp: 0, react/prop-types: 0 */
 
 import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Input } from 'reactstrap';
-import editIcon from '../img/edit.svg'
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { updateAction, deleteAction } from '../redux/actions/Actions';
-import types from '../redux/actions/Types';
 import './ModalTodo.css'
 import { connect } from 'react-redux'
 
 const ModalExample = ({ trigger, toggle, description, title, id, updateTodo, dataSet, status, createdAt, removable, deleteTodo }) => {
-    const [editHeader, setEditHeader] = useState(false)
     const [titleChange, setTitleChange] = useState(title)
     const [descChange, setDescChange] = useState(description)
     let todoId = id
